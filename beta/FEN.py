@@ -1,4 +1,5 @@
 import re
+import os
 
 baseFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -'
 
@@ -179,19 +180,20 @@ def newFEN(fen,coup):
         
 
 
-
-
-with open("mini.pgn") as pgn:
-    for i in pgn.readlines():
-        if i.startswith('1. '):
-            fen = baseFEN
-            pos = []
-            coup = []
-            tmp = re.sub('\{.*?\}','',i).split(' ')
-            tmp = [k for k in tmp if k != '']
-            coup = tmp[1::2]
-            print(coup)
-            for i in coup:
-                fen = newFEN(fen,re.sub(r'[^\w]', '', i))
-                pos.append(fen)
+lsdir = os.listdir("../PGNFile")
+for ls in lsdir:
+    if ls.endswith(".pgn"):
+        with open("../PGNFile/"+ls) as pgn:
+            for i in pgn.readlines():
+                if i.startswith('1. '):
+                    fen = baseFEN
+                    pos = []
+                    coup = []
+                    tmp = re.sub('\{.*?\}','',i).split(' ')
+                    tmp = [k for k in tmp if k != '']
+                    coup = tmp[1::2]
+                    print(coup)
+                    for i in coup:
+                        fen = newFEN(fen,re.sub(r'[^\w]', '', i))
+                        pos.append(fen)
     
