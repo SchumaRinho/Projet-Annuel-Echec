@@ -1,0 +1,74 @@
+L'analyse a été faite sur 455187 partie(s).
+
+Voici divers statistiques sur le fichier pgn que vous venez d'analyser
+
+
+Les 3 FEN où le Roi noir est le plus souvent en échec :
+
+1. rnbqkbnr/pp2pppp/3p4/1Bp5/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - , il est présent 4365 fois
+2. r1bqkb1r/ppp2ppp/5n2/nB1Pp1N1/8/8/PPPP1PPP/RNBQK2R b KQkq - , il est présent 3997 fois
+3. rnbqkb1r/pppp1ppp/5n2/4Q3/4P3/8/PPPP1PPP/RNB1KBNR b KQkq - , il est présent 3088 fois
+
+
+Les 3 FEN où le Roi blanc est le plus souvent en échec :
+
+1. rnb1kbnr/ppp1pppp/4q3/8/8/2N5/PPPP1PPP/R1BQKBNR w KQkq - , il est présent 8943 fois
+2. rnb1kbnr/ppp1pppp/8/4q3/8/2N5/PPPP1PPP/R1BQKBNR w KQkq - , il est présent 6860 fois
+3. r1bqk2r/pppp1ppp/2n2n2/8/1bBPP3/5N2/PP3PPP/RNBQK2R w KQkq - , il est présent 3027 fois
+
+
+Les 3 FEN où le Roi noir est le plus souvent en échec et mat :
+
+1. r1bqkb1r/pppp1Qpp/2n2n2/4p3/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - , il est présent 474 fois
+2. r1bqkb1r/ppp2Qpp/8/3Bp3/3n4/8/PPPP1PPP/RNB1K2R b KQ - , il est présent 371 fois
+3. r1bqkbnr/ppp2Qpp/2np4/4p3/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - , il est présent 327 fois
+
+
+Les 3 FEN où le Roi blanc est le plus souvent en échec et mat :
+
+1. r1b1k2N/pppp2pp/2n5/4p3/2B1n3/8/PPPP1qPP/RNBQ1K1R  w - - , il est présent 209 fois
+2. 5rk1/1bpp1/p3p2p/1p6/2p2PQ1/P1P5/1P1r2RP/RB3q1K w - - , il est présent 131 fois
+2. 3rkr2/pP1b4/2p1p3/q7/4p3/4Pp2/5P2/3BKR2 w - - , il est présent 109 fois
+
+
+Les 3 coups qui peut mettre le Roi noir le plus souvent en échec :
+
+1. Ne4f6 , il est présent 155183 fois
+2. Nd5f6 , il est présent 109864 fois
+3. Bc8f7 , il est présent 108688 fois
+
+
+Les 3 coups qui peut mettre le Roi noire le plus souvent en échec :
+
+1. bc8b4 , il est présent 236390 fois
+2. qc8a5 , il est présent 175824 fois
+3. ne5f3 , il est présent 165733 fois
+
+
+Les 3 coups qui peut mettre le Roi blanc le plus souvent en échec :
+
+1. Qa8g7 , il est présent 7322 fois
+2. Bc8f7 , il est présent 6210 fois
+3. Ra8g7 , il est présent 6101 fois
+
+
+Les 3 coups qui peut mettre le Roi blanc le plus souvent en échec et mat:
+
+1. bc8f2 , il est présent 7225 fois
+2. qa8g2 , il est présent 6950 fois
+3. ra8g2 , il est présent 6884 fois
+
+
+Mate spéciaux rencontrés :
+Nombre de mat avec petit Roque : 2 sur 455187
+
+Voici un exemple de partie : 1. e4  1... e5  2. Nf3  2... Nf6  3. Nc3  3... Nc6  4. Bb5  4... h5  5. d4  5... d5  6. Bg5  6... dxe4  7. Bxf6  7... gxf6  8. Nxe4  8... exd4  9. Qxd4  9... Bd6  10. Nxf6+  10... Ke7  11. Nd5+  11... Kd7  12. Ne5+  12... Bxe5  13. Qxe5  13... Re8  14. Nb6+  14... cxb6  15. O-O-O#  1-0
+
+Nombre de mat avec grand Roque : 3 sur 455187
+
+Voici un exemple de partie : 1. d4  1... d5  2. c4  2... e6  3. Nc3  3... a6  4. Nf3  4... Qd7  5. cxd5  5... exd5  6. Ne5  6... Qe7  7. Bf4  7... Qb4  8. Bd2  8... c5  9. Nxd5  9... Qxb2  10. Nc7+  10... Ke7  11. Nxa8  11... Kd6  12. Nxf7+  12... Kc6  13. Qa4+  13... b5  14. Qd1  14... Bf5  15. Ne5+  15... Kd5  16. Nb6+  16... Kxd4  17. Nc8  17... Bc2  18. Nf3+  18... Kc4  19. e4+  19... Bd3  20. Bxd3+  20... Kxd3  21. Qe2+  21... Kc2  22. Rc1+  22... Qxc1+  23. Bxc1+  23... Kxc1  24. O-O#  1-0
+
+Nombre de mat avec en passant : 8 sur 455187
+
+Voici un exemple de partie : 1. e4  1... b6  2. d4  2... Bb7  3. Nc3  3... e6  4. a3  4... Be7  5. Nf3  5... d6  6. Bd3  6... Nd7  7. O-O  7... c5  8. d5  8... e5  9. Nd2  9... Ngf6  10. f4  10... exf4  11. Nc4  11... Ne5  12. Bxf4  12... Nxc4  13. Bxc4  13... a6  14. e5  14... dxe5  15. Bxe5  15... O-O  16. d6  16... Bxd6  17. Qxd6  17... Qxd6  18. Bxd6  18... Rad8  19. Bxf8  19... Rxf8  20. Rae1  20... Rd8  21. Re7  21... Bc6  22. Rxf7  22... Kh8  23. Nd5  23... Bxd5  24. Bxd5  24... Rxd5  25. Rf8+  25... Ng8  26. Re1  26... h6  27. Ree8  27... Kh7  28. Rxg8  28... Rd2  29. h4  29... Rxc2  30. h5  30... g5  31. hxg6#  1-0
+
