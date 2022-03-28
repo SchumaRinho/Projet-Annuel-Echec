@@ -1,6 +1,5 @@
 print("veuillez patienter. Le script a des soucis d'optimisation...")
 
-import FENChess
 import FENAnalyse
 
 FenIsMoreCheckB3,FenIsMoreCheckW3 = FENAnalyse.getFenIsMoreCheck()
@@ -11,11 +10,11 @@ moveMakeMoreCheckB3,moveMakeMoreCheckW3 = FENAnalyse.getMoveMakeMoreCheck()
 
 moveMakeMoreCheckMateB3,moveMakeMoreCheckMateW3 = FENAnalyse.getMoveMakeMoreCheckMate()
 
-gRoqueMate,pRoqueMate,enPassantMate = FENChess.getMateSpecial()
+gRoqueMate,pRoqueMate,enPassantMate = FENAnalyse.getMateSpecial()
 
-exempleGR,exemplePR,exempleEP = FENChess.getExempleMateSpecial()
+exempleGR,exemplePR,exempleEP = FENAnalyse.getExempleMateSpecial()
 
-nbGames = FENChess.getNbGames()
+nbGames = FENAnalyse.getNbGames()
 
 res = open("Resultat.txt","w")
 res.write("L'analyse a été faite sur "+str(nbGames)+" partie(s).\n\n")
@@ -55,14 +54,14 @@ for k,v in moveMakeMoreCheckB3.items():
     i+=1
     res.write(str(i)+". "+str(k)+" , il est présent "+str(v)+" fois\n")
 res.write("\n\n")
-res.write("Les 3 coups qui peut mettre le Roi noire le plus souvent en échec :\n\n")
+res.write("Les 3 coups qui peut mettre le Roi blanc le plus souvent en échec :\n\n")
 
 i=0
 for k,v in moveMakeMoreCheckW3.items():
     i+=1
     res.write(str(i)+". "+str(k)+" , il est présent "+str(v)+" fois\n")
 res.write("\n\n")
-res.write("Les 3 coups qui peut mettre le Roi blanc le plus souvent en échec :\n\n")
+res.write("Les 3 coups qui peut mettre le Roi noir le plus souvent en échec :\n\n")
 
 i=0
 for k,v in moveMakeMoreCheckMateB3.items():

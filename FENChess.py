@@ -28,6 +28,7 @@ def getExempleMateSpecial():
     return(exempleGR,exemplePR,exempleEP)
 
 def roqueCheck(game): #Analyse si la partie c'est terminé sur roque en echec et mat
+    global gRoqueMate, pRoqueMate, exempleGR, exemplePR
     gametmp = re.sub('({.*?})','',game)
     if "O-O-O#" in gametmp:
         gRoqueMate+=1
@@ -39,6 +40,7 @@ def roqueCheck(game): #Analyse si la partie c'est terminé sur roque en echec et
             exemplePR = gametmp
         
 def enPassantCheck(game): #Analyse si la partie c'est terminé sur un coup en passant en echec et mat
+    global enPassantMate, exempleEP
     gametmp = re.sub('({.*?})|(\d+\..?[^a-zA-Z])','',game) #regexp permettant de supprimer les parties obsolète du pgn
     for i in range(len(pos)):
         if (not i-1<0 and (" "+pos[i-1]+"4   "+pos[i]+"x"+pos[i-1]+"3#" in gametmp)):
@@ -55,6 +57,7 @@ def enPassantCheck(game): #Analyse si la partie c'est terminé sur un coup en pa
             EnPassantMate+=1
 
 def FENGenerator():
+    global nbGames
     for ls in lsdir:
         if ls.endswith(".pgn"):
             with open("PGNFile/"+ls) as pgn:

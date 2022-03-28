@@ -348,6 +348,14 @@ def getMoveMakeMoreCheckMate():
 def getMoveMakeMoreCheck():
     return (makeStat(moveMakeMoreCheckB3),makeStat(moveMakeMoreCheckW3))
 
+def getNbGames():
+    return FENChess.getNbGames()
+
+def getMateSpecial():
+    return FENChess.getMateSpecial()
+
+def getExempleMateSpecial():
+    return FENChess.getExempleMateSpecial()
 ################ PARCOURS PLATEAU #########################
 def parcousPlateau(o,table):
     for i in range(len(table)):
